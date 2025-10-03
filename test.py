@@ -1,0 +1,2 @@
+happy = mad
+print(mad)
