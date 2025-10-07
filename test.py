@@ -4,18 +4,32 @@ language("Cadee's computer never seems to work in the morning") """
 
 
 
-def lang():
+""" def lang():
    s = 0
    t = 0
-   x = input("sentence")
+   x = input("Put your sentence here")
    for char in x:
-     if char == "s" or "S":
-       s=s+1
-     elif char == "t" or "T"
-        t=+1
-    if s >= t:
-    print ("french")
-    else:
- print ("english")
+     if char == "s" or char == "S":
+         s=s+1
+     elif char == "t" or char == "T":
+         t=t+1
+   if s >= t:
+      print ("French")
+   else:
+      print ("English")
 lang()
+ """
+     
 
+
+def spaces():
+    list=[]
+    x = input("put your parking spaces here")
+    for parking in x:
+        x.split
+        list.append(x)
+        print(list)
+
+
+
+spaces()
