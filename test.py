@@ -23,13 +23,11 @@ lang()
 
 
 def spaces():
-    list=[]
-    x = input("put your parking spaces here")
+    x = input("Put yesterday's parking spaces here")
+    y=input("Put todays's parking spaces here")
+    z=0
     for parking in x:
-        x.split
-        list.append(x)
-        print(list)
-
-
-
+        if x == y and x == "C":
+            z = z + 1
+    print (f"There are {z} parking spaces.")
 spaces()
