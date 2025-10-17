@@ -34,10 +34,42 @@ lang()
 spaces() """
 
 
-def occupied(n,y,t):
+""" def occupied(n,y,t):
     both = 0
     for i in range(n):
         if (y[i] == "C" and t[i] == "C"):
             both +=1
     return both
-print(occupied(5,"CCC..", "C.C.C"))
+print(occupied(5,"CCC..", "C.C.C")) """
+
+Toy_store = [
+    "item1" = { 
+      "name" : "basketball",
+      "price" : 29.99,
+      "category" : "sports",
+    },
+    "item2" = {
+        "name" : "Pokemon pack",
+        "price" : 4.99,
+        "category" : "cards",
+    },
+    "item3 = {
+        "name" : "lego set",
+        "pirce" : 25.99,
+        "category" : "toys",
+    },
+    item4 = {
+        "name" : "Hot wheels",
+        "price" : 10.99,
+        "category" : "toy cars",
+    }
+]
+print ("Welcome to the Toy store,Here are the items that you can buy")
+for index, item in enumerate(Toy_store):
+    print (index , ":", item["name"])
+x = input("What toy would you like to buy?: ")
+for y in Toy_store:
+    if x == Toy_store:[y]["name"]
+    for z in Toy_store["item1"]:
+        print (Toy_store[y][z])
+
