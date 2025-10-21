@@ -42,34 +42,43 @@ spaces() """
     return both
 print(occupied(5,"CCC..", "C.C.C")) """
 
-Toy_store = [
-    "item1" = { 
+Toy_store = {
+    "basketball" : { 
       "name" : "basketball",
       "price" : 29.99,
       "category" : "sports",
     },
-    "item2" = {
+    "Pokemon pack" : {
         "name" : "Pokemon pack",
         "price" : 4.99,
         "category" : "cards",
     },
-    "item3 = {
+    "lego set" : {
         "name" : "lego set",
         "pirce" : 25.99,
         "category" : "toys",
     },
-    item4 = {
+    "Hot wheels": {
         "name" : "Hot wheels",
         "price" : 10.99,
         "category" : "toy cars",
     }
-]
-print ("Welcome to the Toy store,Here are the items that you can buy")
-for index, item in enumerate(Toy_store):
-    print (index , ":", item["name"])
-x = input("What toy would you like to buy?: ")
-for y in Toy_store:
-    if x == Toy_store:[y]["name"]
-    for z in Toy_store["item1"]:
-        print (Toy_store[y][z])
-
+}
+print ("Welcome to the Toy store,Here are the items that you can buy.")
+for i in Toy_store :
+    print (Toy_store[i]["name"])
+cart = []
+price_cart = [] 
+a = input("Would you like to buy anything? Yes or No")
+while a == "Yes":
+   b = input("What would you like to buy?")
+   cart.append(b)
+   price_cart.append(Toy_store[b]["price"])
+   print(f"This is your total:{price_cart}")
+   c = input("Would you like to buy anything else")
+   if c == "Yes" :
+     a == "Yes" 
+   elif c == "No" :
+       a == "No"
+print(cart)
+print(sum(price_cart))
