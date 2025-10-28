@@ -66,19 +66,15 @@ Toy_store = {
 }
 print ("Welcome to the Toy store,Here are the items that you can buy.")
 for i in Toy_store :
-    print (Toy_store[i]["name"])
+    print (Toy_store[i]['name'])
+a = ""
 cart = []
 price_cart = [] 
-a = input("Would you like to buy anything? Yes or No")
-while a == "Yes":
-   b = input("What would you like to buy?")
-   cart.append(b)
-   price_cart.append(Toy_store[b]["price"])
-   print(f"This is your total:{price_cart}")
-   c = input("Would you like to buy anything else")
-   if c == "Yes" :
-     a == "Yes" 
-   elif c == "No" :
-       a == "No"
-print(cart)
-print(sum(price_cart))
+while a != "No" :
+     if a == "Yes" :
+         b = input("What would you like to buy")
+         cart.append(b)
+         price_cart.append(Toy_store[b]["price"])
+         print(f"This is your total: {sum(price_cart)}")
+     a = input("Would you like to buy anything? Yes or No: ")
+print(f"This is your price: {sum(price_cart)} and your cart: {(cart)}")
